@@ -196,7 +196,7 @@ a:focus, a:hover {
 
 .order-section {
   color: white;
-  background: url("../img/cream.jpg") no-repeat center center scroll;
+  background: url("../img/cream_inverted.jpg") no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
