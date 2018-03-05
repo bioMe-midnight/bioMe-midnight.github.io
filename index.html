@@ -99,15 +99,15 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Reserve yours now</h2>
-            <p></p>
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
-                </a>
-              </li>
-            </ul>
+            <p>Put your first bioMe <i>Midnight</i> microbiome cream on reserve now.</p>
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdWMU9gp28PRQ07sdpLwvL9E8DmoWHOgNu9XAslr3JpxBDyhg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+              Name:<br>
+              <input type="text" name="entry.667659843" id="entry.667659843"><br>
+              Email:<br>
+              <input type="text" name="entry.1834269188" id="entry.1834269188">
+              <input type="submit" value="Submit">
+            </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}:"></iframe>
           </div>
         </div>
       </div>
@@ -122,6 +122,13 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+              $('#gform').on('submit', function(e) {
+              $('#gform *').fadeOut(2000);
+              $('#gform').prepend('Thank you for your interest in bioMe. We will be in touch.');
+              });
+    </script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
